@@ -1,0 +1,28 @@
+CONECTA — PÁGINA WEB ESCOLAR, EDICIÓN SIMPLE
+
+INSTRUCCIONES
+1. Descomprime el ZIP.
+2. Abre el archivo index.html con Chrome, Edge o Firefox.
+3. ¡Listo! No se necesita XAMPP, internet ni instalaciones.
+
+QUÉ INCLUYE
+- Página de Inicio, Fotos, Videos, Noticias, Ventas y Administración.
+- Publicaciones ficticias listas para mostrar.
+- Registro e inicio de sesión de DEMOSTRACIÓN.
+- Crear publicaciones con texto y emojis; comentar y dar me gusta.
+- Chatbot simple con respuestas programadas.
+- Diseño adaptable a móviles y computadores.
+
+ADMINISTRADOR DE PRUEBA
+Correo: admin@conecta.local
+Contraseña: admin123
+
+IMPORTANTE SOBRE LOS DATOS
+Los datos nuevos se guardan en localStorage del NAVEGADOR, no como archivos en esta carpeta. Si abres el sitio en otro navegador o computador, empiezas con los datos de ejemplo. Si borras los datos del navegador, se pierden los cambios. Las contraseñas en esta versión son una SIMULACIÓN sin protección: no uses correos ni contraseñas reales.
+
+Esta versión no sube fotos ni videos reales. Las tarjetas son ilustraciones con emojis, sin dependencias externas. El chatbot es una simulación básica sin IA.
+
+ARCHIVOS
+index.html : estructura de la página
+styles.css : estilos y diseño visual
+app.js : interacciones y almacenamiento local

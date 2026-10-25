@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Conecta — Comparte lo que te interesa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="topbar"><a class="brand" href="#inicio"><span class="brandmark">✦</span> conecta<span
+                class="period">.</span></a>
+        <div class="search"><span>⌕</span><input id="search"
+                placeholder="Buscar publicaciones, noticias o productos..."></div>
+        <nav class="top-nav"><button data-page="inicio" class="top-link active">Inicio</button><button
+                data-page="noticias" class="top-link">Noticias</button><button data-page="videos"
+                class="top-link">Videos</button><button data-page="ventas" class="top-link">Ventas</button></nav><button
+            class="profile-btn" id="authButton">Ingresar ↗</button>
+    </header>
+    <div class="shell">
+        <aside class="sidebar">
+            <div class="sidebar-title">TU ESPACIO</div><button class="side-link active"
+                data-page="inicio"><span>⌂</span> Inicio</button><button class="side-link"
+                data-page="fotos"><span>▧</span> Fotos</button><button class="side-link"
+                data-page="videos"><span>▷</span> Videos</button><button class="side-link"
+                data-page="noticias"><span>▤</span> Noticias</button><button class="side-link"
+                data-page="ventas"><span>◇</span> Ventas</button>
+            <div class="aside-line"></div>
+            <div class="sidebar-title">COMUNIDAD</div>
+            <div class="side-plain">◉ &nbsp; Tecnología</div>
+            <div class="side-plain">◉ &nbsp; Naturaleza y viajes</div>
+            <div class="side-plain">◉ &nbsp; Arte y creatividad</div>
+            <div class="aside-line"></div><button class="side-link" data-page="admin"><span>⚙</span>
+                Administración</button>
+            <div class="side-bottom">
+                <div class="mini-logo">✦</div><strong>Un espacio para todos.</strong>
+                <p>Explora, comparte y descubre nuevas ideas.</p>
+            </div>
+        </aside>
+        <main class="main" id="main">
+            <div class="hero">
+                <div class="hero-text"><span class="eyebrow">✦ BIENVENIDO A CONECTA</span>
+                    <h1>Lo interesante pasa <em>aquí.</em></h1>
+                    <p>Comparte tus momentos, descubre noticias y encuentra cosas increíbles en una sola comunidad.</p>
+                    <button class="primary" id="heroCreate">+ Crear publicación</button>
+                </div>
+                <div class="hero-art"><span class="orbit orbit1"></span><span class="orbit orbit2"></span><span
+                        class="hero-blob">✺</span><span class="hero-chip chip1">✦ Creatividad</span><span
+                        class="hero-chip chip2">♥ Comunidad</span></div>
+            </div>
+            <div class="section-heading">
+                <div>
+                    <div class="kicker" id="sectionKicker">TU COMUNIDAD</div>
+                    <h2 id="sectionTitle">Descubre lo nuevo</h2>
+                </div><span class="section-count" id="sectionCount">Publicaciones destacadas</span>
+            </div>
+            <div id="composer" class="composer">
+                <div class="avatar me">T</div><button class="composer-trigger" id="composeButton">¿Qué te gustaría
+                    compartir hoy?</button><button class="compose-plus" id="composePlus">+</button>
+            </div>
+            <div class="filters" id="filters"><button class="filter active" data-filter="todos">Para ti</button><button
+                    class="filter" data-filter="fotos">Fotos</button><button class="filter"
+                    data-filter="videos">Videos</button><button class="filter"
+                    data-filter="noticias">Noticias</button><button class="filter"
+                    data-filter="ventas">Marketplace</button></div>
+            <div class="posts" id="posts"></div>
+        </main>
+        <aside class="rightbar">
+            <div class="side-card">
+                <div class="right-title">Tendencias <span>↗</span></div>
+                <div class="trend"><span class="trend-icon purple">✧</span>
+                    <div><small>EN TENDENCIA</small><b>Inteligencia artificial</b>
+                        <p>1.2k publicaciones</p>
+                    </div>
+                </div>
+                <div class="trend"><span class="trend-icon teal">✿</span>
+                    <div><small>POPULAR</small><b>Fotografía creativa</b>
+                        <p>860 publicaciones</p>
+                    </div>
+                </div>
+                <div class="trend"><span class="trend-icon orange">⌁</span>
+                    <div><small>COMUNIDAD</small><b>Viajes por Chile</b>
+                        <p>540 publicaciones</p>
+                    </div>
+                </div>
+            </div>
+            <div class="side-card">
+                <div class="right-title">Explora Conecta <span>✦</span></div>
+                <p class="side-note">Una comunidad para aprender, inspirarte y conectar con personas con tus mismos
+                    intereses.</p><button class="outline" data-page="noticias">Ver noticias →</button>
+            </div>
+            <div class="right-footer">Proyecto escolar • Hecho con ♥<br>Funciona sin conexión a internet</div>
+        </aside>
+    </div>
+    <button id="chatToggle" class="chat-toggle">✦ <span>ConectaBot</span></button>
+    <div class="chat-window hidden" id="chatWindow">
+        <div class="chat-head"><strong>✦ ConectaBot</strong><button id="chatClose">×</button></div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="bot-msg">¡Hola! 👋 Soy ConectaBot. Pregúntame por fotos, videos, noticias o ventas.</div>
+        </div>
+        <form id="chatForm"><input id="chatInput" required placeholder="Escribe tu mensaje..."><button
+                aria-label="Enviar">➤</button></form>
+    </div>
+    <div id="modal" class="modal hidden">
+        <div class="modal-box"><button class="close" id="modalClose">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    <footer class="mobile-nav"><button data-page="inicio">⌂<small>Inicio</small></button><button
+            data-page="fotos">▧<small>Fotos</small></button><button
+            data-page="videos">▷<small>Videos</small></button><button
+            data-page="noticias">▤<small>Noticias</small></button><button
+            data-page="ventas">◇<small>Ventas</small></button></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
